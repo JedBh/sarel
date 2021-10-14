@@ -1,0 +1,24 @@
+{
+  "name": "why-the-fuck-u-wont-work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JedBh/why-the-fuck-u-wont-work.git"
+  },
+  "author": "jed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JedBh/why-the-fuck-u-wont-work/issues"
+  },
+  "homepage": "https://github.com/JedBh/why-the-fuck-u-wont-work#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0"
+  }
+}
