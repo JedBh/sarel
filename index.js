@@ -14,6 +14,6 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
-app.listen(8080, () => {
+app.listen(3030, () => {
   console.log("Server is runing...");
 });

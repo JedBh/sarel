@@ -128,11 +128,169 @@ table {
   border-spacing: 0;
 }
 
+/* css reset ends here */
+
+html,
+body {
+  height: 100%;
+  background: #ececec;
+}
+
 * {
   margin: 0;
 }
 
 section {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 100%;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  margin: 0;
+}
+
+/* video background */
+
+#jumbotron {
+  display: none;
+}
+
+@media only screen and (max-width: 414px) {
+  header {
+    display: none;
+  }
+  #aboutUs {
+    margin-top: 50px;
+  }
+  #jumbotron {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    color: rgb(255, 255, 255);
+  }
+  #jumbotron h1 {
+    font-size: 3em;
+  }
+  #jumbotron p {
+    font-style: italic;
+  }
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+canvas {
+  display: block;
+  /* vertical-align: bottom; */
+}
+
+/* particles & banner*/
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 250%;
+  background: #ececec;
+  z-index: 2;
+}
+
+/* about */
+
+#aboutUs {
+  z-index: 9;
+}
+
+.spacing {
+  padding: 42px 16px;
+  line-height: 1.6em;
+}
+
+.spacing img {
+  padding: 22px;
+}
+
+.spacing h2 {
+  font-weight: 500;
+  margin: 0 0 30px 12px;
+}
+
+.spacing p {
+  opacity: 0.9;
+  margin: 0 0 0 22px;
+}
+
+/* links */
+
+.links img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.display-4 {
+  font-weight: 500;
+}
+
+/* outro */
+
+.outro-container {
+  text-align: center;
+  font-size: 1.6em;
+  opacity: 0.9;
+}
+
+/* footer */
+
+.twelve-vh {
+  padding: 8vh 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.two-vh {
+  padding-top: 3vh;
 }
