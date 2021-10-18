@@ -264,13 +264,34 @@ canvas {
 
 .links img {
   width: 100%;
-  height: 100%;
+  height: 150px;
   object-fit: cover;
   opacity: 0.8;
 }
 
+.links .card-body {
+  height: 220px;
+}
+
+.link-buttons {
+  /* border: 1px solid black; */
+  position: absolute;
+  bottom: 0;
+  height: 20%;
+  width: 85%;
+  margin: auto 0;
+}
+
 .display-4 {
   font-weight: 500;
+}
+
+.links .card-title {
+  font-size: 22px;
+}
+
+.links .card-text {
+  line-height: 1.2em;
 }
 
 /* outro */
